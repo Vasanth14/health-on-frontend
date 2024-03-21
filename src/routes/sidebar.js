@@ -2,6 +2,8 @@
 import BellIcon from '@heroicons/react/24/outline/BellIcon'
 import DocumentTextIcon from '@heroicons/react/24/outline/DocumentTextIcon'
 import Squares2X2Icon from '@heroicons/react/24/outline/Squares2X2Icon'
+// import UserIcon from '@heroicons/react/24/outline/UserIcon'
+import HeartIcon from '@heroicons/react/24/outline/HeartIcon'
 import TableCellsIcon from '@heroicons/react/24/outline/TableCellsIcon'
 import WalletIcon from '@heroicons/react/24/outline/WalletIcon'
 import CodeBracketSquareIcon from '@heroicons/react/24/outline/CodeBracketSquareIcon'
@@ -30,6 +32,16 @@ const routes = [
     name: 'Dashboard',
   },
   {
+    path: '/app/patients', // url
+    icon: <HeartIcon className={iconClasses}/>, // icon component
+    name: 'Patients', // name that appear in Sidebar
+  },
+  {
+    path: '/app/cheifDoctors', // url
+    icon: <UserIcon className={iconClasses}/>, // icon component
+    name: 'Cheif Doctors', // name that appear in Sidebar
+  },
+  {
     path: '/app/leads', // url
     icon: <InboxArrowDownIcon className={iconClasses}/>, // icon component
     name: 'Leads', // name that appear in Sidebar
@@ -44,11 +56,11 @@ const routes = [
     icon: <ChartBarIcon className={iconClasses}/>, // icon component
     name: 'Analytics', // name that appear in Sidebar
   },
-  {
-    path: '/app/integration', // url
-    icon: <BoltIcon className={iconClasses}/>, // icon component
-    name: 'Integration', // name that appear in Sidebar
-  },
+  // {
+  //   path: '/app/integration',
+  //   icon: <BoltIcon className={iconClasses}/>,
+  //   name: 'Integration',
+  // },
   {
     path: '/app/calendar', // url
     icon: <CalendarDaysIcon className={iconClasses}/>, // icon component

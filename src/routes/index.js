@@ -12,6 +12,8 @@ const Integration = lazy(() => import('../pages/protected/Integration'))
 const Calendar = lazy(() => import('../pages/protected/Calendar'))
 const Team = lazy(() => import('../pages/protected/Team'))
 const Transactions = lazy(() => import('../pages/protected/Transactions'))
+const Patients = lazy(() => import('../pages/protected/Patients'))
+const CheifDoctors = lazy(() => import('../pages/protected/CheifDoctors'))
 const Bills = lazy(() => import('../pages/protected/Bills'))
 const ProfileSettings = lazy(() => import('../pages/protected/ProfileSettings'))
 const GettingStarted = lazy(() => import('../pages/GettingStarted'))
@@ -43,6 +45,14 @@ const routes = [
   {
     path: '/transactions',
     component: Transactions,
+  },
+  {
+    path: '/patients',
+    component: Patients,
+  },
+  {
+    path: '/cheifDoctors',
+    component: CheifDoctors,
   },
   {
     path: '/settings-profile',
