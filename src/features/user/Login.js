@@ -47,6 +47,9 @@ function Login() {
 
             const userInfo = response.data
             localStorage.setItem("userInfo", JSON.stringify(userInfo))
+
+            const hospitalId = response.data.cheifDoctor?.hospital.hospitalId || response.data.hospital?.id
+            localStorage.setItem("hospitalId", hospitalId)
             setLoading(false);
             window.location.href = '/';
         } catch (error) {
